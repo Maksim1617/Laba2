@@ -1,0 +1,26 @@
+﻿<Window x:Class="Laba2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba2"
+        mc:Ignorable="d"
+        Title="Greetings" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    <Grid HorizontalAlignment="Center" Width="846">
+        <StackPanel Margin="30,49,30,280" Orientation="Horizontal">
+            <Label Content="Type your name:" Height="100" Width="370" FontFamily="Segoe UI" FontSize="48"/>
+            <TextBox  TextWrapping="Wrap" Width="370" Name="txtName" Margin="10,10,10,10" FontSize="48"/>
+        </StackPanel>
+        
+        <StackPanel Margin="30,189,30,140" Orientation="Horizontal">
+            <Label Content="Type your name:" Height="100" Width="370" FontFamily="Segoe UI" FontSize="48"/>
+            <TextBox TextWrapping="Wrap" Width="370" Name="txtGroup" Margin="10,10,10,10" FontSize="48"/>
+        </StackPanel>
+        
+        <StackPanel Margin="203,313,197,39" Orientation="Horizontal">
+            <Button Name="btnOK" IsDefault="True" Content="OK" Margin="0,0,40,0" Width="180" FontSize="48" Click="btnOK_Click"/>
+            <Button Name="btnCancel" IsCancel="True" Content="Cancel" Margin="0,0,0,0" Width="180" FontSize="48" Click="btnCancel_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
